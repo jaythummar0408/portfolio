@@ -9,7 +9,7 @@ const About = () => {
             <div class="container">
                 <div class="profile-teaser row">
                     <div class="col-md-7 col-lg-7">
-                        <h2 class="name font-weight-bold mb-1">Jay Thummar</h2>
+                        <h2 class="name font-weight-bold mb-1">Sid Suvagiya</h2>
                         <div class="tagline mb-3">Mid Senior Software Engineer</div>
                         <div class="bio mb-4 im-software">I'm a software engineer specialised in frontend 
                             development for complex scalable web apps. I write about software development on <a
