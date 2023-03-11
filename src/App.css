@@ -18,6 +18,7 @@
   --hr-color:#fafafa;
   --background-color-project-card:#fafafa;
   --project-btn-color:#54B689;
+  --about-resume-btn-color:#4f4f4f;
 }
 
 /* 2 */
@@ -40,6 +41,7 @@
   --hr-color:#4f4f4f;
   --background-color-project-card:#1E2A3A;
   --project-btn-color:#54B689;
+  --about-resume-btn-color:#1E2A3A;
 
 }
 
@@ -318,8 +320,8 @@ hr {
 }
 
 .btn-resume {
-  background-color: #4f4f4f;
-  border-color: #4f4f4f;
+  background-color: var(--about-resume-btn-color);
+  border-color: var(--about-resume-btn-color);
   padding: 0.375rem 1rem;
 }
 
