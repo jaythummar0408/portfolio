@@ -11,15 +11,12 @@ const Home = () => {
     <div class="container-fluid px-0">
     <Header/>
     <div class="main-wrapper">
-    <div className=''>
-
+    
         <About/>
-        {/* <DarkMode/> */}
         <Portfolio/>
         <Resume/> 
         <Contact/> 
-
-    </div>
+   
     </div>
     </div>
   )

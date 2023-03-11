@@ -35,6 +35,10 @@ const Header = () => {
     e.target.checked ? setDark() : setLight()
 
   };
+
+  const changeTab = (tab) =>{
+    setTab(tab)
+  }
   return (
     <div>
       <header class="header text-center">
@@ -53,6 +57,7 @@ const Header = () => {
               aria-controls="navigation"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              collapseOnSelect={true}
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -99,25 +104,25 @@ const Header = () => {
               </div>
 
               <ul class="navbar-nav flex-column text-start ul-navwidth">
-                <li class="nav-item" onClick={()=>setTab('about_me')}>
+                <li class="nav-item" onClick={()=>changeTab('about-me')}>
                   <a class={`nav-link ${tab == "about_me" && 'active'}`} href="#aboutme">
                     <i class="fas fa-user fa-fw me-2"></i>About Me
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
-                <li class="nav-item" onClick={()=>setTab('portfolio')}>
+                <li class="nav-item" onClick={()=>changeTab('portfolio')}>
                   <a class={`nav-link ${tab == "portfolio" && 'active'}`} href="#portfolio">
                     <i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio
                   </a>
                 </li>
 
-                <li class="nav-item" onClick={()=>setTab('resume')}>
+                <li class="nav-item" onClick={()=>changeTab('resume')}>
                   <a class={`nav-link ${tab == "resume" && 'active'}`} href="#resume">
                     <i class="fas fa-file-alt fa-fw me-2"></i>Resume
                   </a>
                 </li>
 
-                <li class="nav-item" onClick={()=>setTab('contact')}>
+                <li class="nav-item" onClick={()=>changeTab('contact')}>
                   <a class={`nav-link ${tab == "contact" && 'active'}`} href="#contact">
                     <i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact
                   </a>

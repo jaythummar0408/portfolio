@@ -3,14 +3,14 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-         <section class="cta-section theme-bg-light py-5" id="contact">
+         <section class="cta-section contact-margin theme-bg-light py-5" id="contact">
             <div class="container text-center single-col-max-width">
                 <h2 class="heading">Contact</h2>
                 <div class="intro">
-                    <p>Interested in hiring me for your project or just want to say hi? You can fill in the contact
+                    <p className='contact-text'>Interested in hiring me for your project or just want to say hi? You can fill in the contact
                         form below or send me an email to <a class="text-link"
                             href="mailto:#">simon.doe@yourwebsite.com</a></p>
-                    <p>Want to get connected? Follow me on the social channels below.</p>
+                    <p className='connect-us'>Want to get connected? Follow me on the social channels below.</p>
                     <ul class="list-inline mb-0">
 
                         <li class="list-inline-item mb-3">
@@ -46,9 +46,11 @@ const Contact = () => {
 
         <section class="contact-section px-3 py-5 p-md-5">
             <div class="container">
+            <h2 class="section-title font-weight-bold mb-3">Get In Touch</h2>
+
                 <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="">
-                    <h3 class="text-center mb-3">Get In Touch</h3>
-                    <div class="row g-3">
+                    {/* <h3 class="text-center mb-3 get-touch">Get In Touch</h3> */}
+                    <div class="row g-3 mt-3">
                         <div class="col-12 col-md-6">
                             <label class="sr-only" for="cname">Name</label>
                             <input type="text" class="form-control" id="cname" name="name" placeholder="Name"

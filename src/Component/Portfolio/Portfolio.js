@@ -3,11 +3,12 @@ import React from 'react'
 const Portfolio = () => {
   return (
     <>
+    <hr/>
        <section class="cta-section theme-bg-light py-5" id="portfolio">
             <div class="container text-center single-col-max-width">
                 <h2 class="heading">Portfolio</h2>
                 <div class="intro">
-                    <p>Welcome to my online portfolio. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p className='portfolio-greeting'>Welcome to my online portfolio. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. I'm taking on freelance work at the moment. Want some help
                         building your software?</p>
                 </div>
@@ -15,14 +16,24 @@ const Portfolio = () => {
                     <i class="fas fa-paper-plane me-2"></i>Hire Me</a>
             </div>
         </section>
-
+        <hr/>
         <section class="projects-list px-3 py-5 p-md-5 d-flex justify-content-center">
             <div class="d-block align-items-start">
+        <h2 class="section-title font-weight-bold mb-3">Featured Projects</h2>
+
                 <div class="nav nav-pills mb-3 justify-content-center" id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                         aria-selected="true">Home</button>
+
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Web App </button>
+
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Mobile APp</button>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
@@ -51,7 +62,7 @@ const Portfolio = () => {
                                                                     consectetuer adipiscing elit. Cum sociis natoque
                                                                     penatibus
                                                                     et magnis dis parturient montes.</p>
-                                                                <p class="card-text btn btn-primary"><a
+                                                                <p class="card-text btn btn-success-theme"><a
                                                                         href="images/landrick.png" target="_blank"
                                                                         class="h6 text-white text-capitalize text-decoration-none">view
                                                                         full size image</a></p>
@@ -85,7 +96,7 @@ const Portfolio = () => {
                                                                     consectetuer adipiscing elit. Cum sociis natoque
                                                                     penatibus
                                                                     et magnis dis parturient montes.</p>
-                                                                <p class="card-text btn btn-primary"><a
+                                                                <p class="card-text btn btn-success-theme"><a
                                                                         href="images/zola.png" target="_blank"
                                                                         class="h6 text-white text-capitalize text-decoration-none">view
                                                                         full size image</a></p>
@@ -125,7 +136,7 @@ const Portfolio = () => {
                                                                     consectetuer adipiscing elit. Cum sociis natoque
                                                                     penatibus
                                                                     et magnis dis parturient montes.</p>
-                                                                <p class="card-text btn btn-primary"><a
+                                                                <p class="card-text btn btn-success-theme"><a
                                                                         href="images/nordic.png" target="_blank"
                                                                         class="h6 text-white text-capitalize text-decoration-none">view
                                                                         full size image</a></p>
@@ -160,7 +171,7 @@ const Portfolio = () => {
                                                                     consectetuer adipiscing elit. Cum sociis natoque
                                                                     penatibus
                                                                     et magnis dis parturient montes.</p>
-                                                                <p class="card-text btn btn-primary"><a
+                                                                <p class="card-text btn btn-success-theme"><a
                                                                         href="images/brockyn.png" target="_blank"
                                                                         class="h6 text-white text-capitalize text-decoration-none">view
                                                                         full size image</a></p>
@@ -197,7 +208,7 @@ const Portfolio = () => {
                                                                     consectetuer adipiscing elit. Cum sociis natoque
                                                                     penatibus
                                                                     et magnis dis parturient montes.</p>
-                                                                <p class="card-text btn btn-primary"><a
+                                                                <p class="card-text btn btn-success-theme"><a
                                                                         href="images/amzonseller.png"
                                                                         target="_blank"
                                                                         class="h6 text-white text-capitalize text-decoration-none">view
@@ -233,7 +244,7 @@ const Portfolio = () => {
                                                                     consectetuer adipiscing elit. Cum sociis natoque
                                                                     penatibus
                                                                     et magnis dis parturient montes.</p>
-                                                                <p class="card-text btn btn-primary"><a
+                                                                <p class="card-text btn btn-success-theme"><a
                                                                         href="images/resturant.png"
                                                                         target="_blank"
                                                                         class="h6 text-white text-capitalize text-decoration-none">view

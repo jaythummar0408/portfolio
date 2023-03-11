@@ -17,8 +17,8 @@ const Resume = () => {
         </div>
       </section>
       <section>
-        <div class="container resume-container px-3 px-lg-5">
-          <article class="resume-wrapper mx-auto p-5 mb-5 my-5 shadow-lg">
+        <div class="container resume-container px-3 mb-5 px-lg-5">
+          <article class="resume-wrapper mx-auto p-5  shadow-lg">
             <img
               class=" img-fluid mb-3 mb-lg-0 me-md-0"
               src={jay_cv}

@@ -9,7 +9,7 @@ const About = () => {
             <div class="container">
                 <div class="profile-teaser row">
                     <div class="col-md-7 col-lg-7">
-                        <h2 class="name font-weight-bold mb-1">Sid Suvagiya</h2>
+                        <h2 class="name font-weight-bold mb-1">Jay Thummar</h2>
                         <div class="tagline mb-3">Mid Senior Software Engineer</div>
                         <div class="bio mb-4 im-software">I'm a software engineer specialised in frontend 
                             development for complex scalable web apps. I write about software development on <a
@@ -20,10 +20,10 @@ const About = () => {
                                 href="resume.html">online resume</a>.
                         </div>
                         <div class="mb-4">
-                            <a class="btn btn-primary me-2 mb-3 bnt-portfolio color-white fw-bold"
+                            <button class="btn text-white me-2 mb-3 bnt-portfolio  fw-bold"
                                 href="portfolio.html">
                                 <i class="fas fa-arrow-alt-circle-right me-2"></i> <span
-                                    class="d-none d-md-inline">View</span> Portfolio</a>
+                                    class="d-none d-md-inline">View</span> Portfolio</button>
                             <a class="btn btn-secondary mb-3 btn-resume color-white fw-bold " href="resume.html"><i
                                     class="fas fa-file-alt me-2"></i><span class="d-none d-md-inline">View</span>
                                 Resume</a>
@@ -37,6 +37,7 @@ const About = () => {
                 </div>
             </div>
         </section>
+        <hr style={{height:'1px'}} />
         <section class="overview-section p-3 p-lg-5">
             <div class="container">
                 <h2 class="section-title font-weight-bold mb-3">What I do</h2>
@@ -56,8 +57,7 @@ const About = () => {
                             <h3 class="item-title">HTML &amp; CSS</h3>
                             <div class="item-desc">List skills/technologies here. You can change the icon above to
                                 any
-                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
-                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                of the 1500+  available. Aenean commodo ligula
                                 eget
                                 dolor. </div>
                         </div>
@@ -71,8 +71,7 @@ const About = () => {
                             <h3 class="item-title">Sass &amp; LESS</h3>
                             <div class="item-desc">List skills/technologies here. You can change the icon above to
                                 any
-                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
-                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                of the 1500+  available. Aenean commodo ligula
                                 eget
                                 dolor. </div>
                         </div>
