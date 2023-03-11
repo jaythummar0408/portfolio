@@ -1,12 +1,30 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import profile from "../../assets/profile.jpg";
+import { useSelector, useDispatch } from "react-redux";
+import { changeTheme } from "../../redux/action/actions";
 const Header = () => {
   const [tab,setTab] = useState('about_me')
+  const [isToggle,setIsToggle] = useState(false)
+  const dispatch = useDispatch();
+    useEffect(() => {
+      window.addEventListener('hashchange', handleTabChange);
+  
+      return () => {
+        window.removeEventListener('hashchange', handleTabChange);
+      };
+    }, [])
+    
+  function removeHashFromUrl() {
+    const urlWithoutHash = window.location.href.split('#')[0];
+    window.history.pushState(null, null, urlWithoutHash);
+  }
+
   // 1
   const setDark = () => {
     // 2
     localStorage.setItem("theme", "dark");
-
+    dispatch(changeTheme())
     // 3
     document.documentElement.setAttribute("data-theme", "dark");
   };
@@ -14,6 +32,7 @@ const Header = () => {
   const setLight = () => {
     localStorage.setItem("theme", "light");
     document.documentElement.setAttribute("data-theme", "light");
+    dispatch(changeTheme())
   };
 
   // 4
@@ -33,11 +52,15 @@ const Header = () => {
   // 5
   const toggleTheme = (e) => {
     e.target.checked ? setDark() : setLight()
-
   };
+  
+  function handleTabChange() {
+    removeHashFromUrl();
+  }
 
   const changeTab = (tab) =>{
     setTab(tab)
+    setIsToggle(!isToggle)
   }
   return (
     <div>
@@ -50,19 +73,20 @@ const Header = () => {
           </h1>
           <nav class="navbar navbar-expand-lg navbar-dark">
             <button
-              class="navbar-toggler collapsed"
+              onClick={()=>setIsToggle(!isToggle)}
+              class={`navbar-toggler  ${!isToggle ? 'collapsed':''}`}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navigation"
               aria-controls="navigation"
-              aria-expanded="false"
+              aria-expanded={!isToggle}
               aria-label="Toggle navigation"
-              collapseOnSelect={true}
+              
             >
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="navigation" class="navbar-collapse flex-column collapse">
+            <div id="navigation" class={`navbar-collapse flex-column collapse animate `}>
               <div class="profile-section pt-3 pt-lg-0">
                 <img
                   class="profile-image mb-3 rounded-circle mx-auto"
@@ -104,7 +128,7 @@ const Header = () => {
               </div>
 
               <ul class="navbar-nav flex-column text-start ul-navwidth">
-                <li class="nav-item" onClick={()=>changeTab('about-me')}>
+                <li class="nav-item" onClick={()=>changeTab('about_me')}>
                   <a class={`nav-link ${tab == "about_me" && 'active'}`} href="#aboutme">
                     <i class="fas fa-user fa-fw me-2"></i>About Me
                     <span class="sr-only">(current)</span>

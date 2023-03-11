@@ -76,6 +76,9 @@ a {
   scrollbar-color: rgba(0, 0, 0, 0.2) #54B689;
   scrollbar-width: thin;
 }
+.animate{
+  transition: 0.5s ease all;
+}
 
 .header .blog-name {
   font-weight: bold;
@@ -159,9 +162,6 @@ hr {
   color: var(--nav-color) ;
 }
 
-.header .nav-item .nav-link:hover {
-  color: var(--nav-hover-color);
-}
 
 .header .btn-primary {
   background: var(--hire-me-btn-bgcolor);
